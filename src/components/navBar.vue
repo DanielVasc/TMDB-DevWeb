@@ -1,44 +1,36 @@
-<script setup>
-
-</script>
-
 <template>
     <header>
         <nav>
             <router-link to="/">Home</router-link>
             <router-link to="/filmes">Filmes</router-link>
-            <router-link to="/tv">Programas de TV</router-link>
-            <router-link to="/Favoritos">Favoritos</router-link>
+            <router-link to="/tv">Séries</router-link>
         </nav>
     </header>
 </template>
 
 <style scoped>
-nav {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 1rem;
-    column-gap: 2rem;
-}
-
 header {
-    height: 4rem;
-    display: flex;
-    background-color: #F20C49;
-    color: #fff;
-    font-size: 1.2rem;
-    padding-left: 2rem;
+    background-color: #2c3e50; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
 }
 
 nav {
-    column-gap: 2rem;
-    margin-bottom: 0;
     display: flex;
-    align-items: center;
+    justify-content: center; /* Centraliza os links */
+    column-gap: 2rem;
 }
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff; /* Cor do texto dos links */
+    font-weight: bold; /* Negrito para os links */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+nav a:hover {
+    color: #f39c12; /* Cor ao passar o mouse */
 }
 </style>
